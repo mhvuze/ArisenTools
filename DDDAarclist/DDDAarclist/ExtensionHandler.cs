@@ -189,7 +189,7 @@ namespace DDDAarclist
             rnp = 0x0A74682F,		// rRomNoraPawn
             rpi = 0x63747AA7,		// rRomPawnInfo
             rpn = 0x76DE35F6,		// rRomPawnName
-            shl = 0x619D23DF,		// rShopList
+            shp = 0x619D23DF,		// rShopList
             skl = 0x50F3D713,		// rSkillList
             bgc = 0x5E33464C,		// rSoundBgmControl
             bmse = 0x4CA26828,		// rSoundMotionSe
@@ -207,7 +207,13 @@ namespace DDDAarclist
             wep = 0x6186627D,		// rWeatherEffectParam
             wfp = 0x0525AEE2,		// rWeatherFogParam
             jex = 0x2282360D,       // rJointEx
-            smx = 0x30FC745F        // rSoundSubMixer
+            smx = 0x30FC745F,       // rSoundSubMixer
+            fsm = 0x66B45610,       // rAIFSM
+            sce = 0x65B275E5,       // rScenario
+            spkg = 0x02358E1A,       // rShaderPackage
+            shl = 0x325AACA5,       // rShlParamList
+            gr2 = 0x11C35522,       // unknown
+            sase = 0x07437CCE       // rSoundAttributeSe
         }
 
         // int to string
@@ -386,7 +392,7 @@ namespace DDDAarclist
                 case (int)Ext.rnp: string_extension = "rnp"; break;
                 case (int)Ext.rpi: string_extension = "rpi"; break;
                 case (int)Ext.rpn: string_extension = "rpn"; break;
-                case (int)Ext.shl: string_extension = "shl"; break;
+                case (int)Ext.shp: string_extension = "shl"; break;
                 case (int)Ext.skl: string_extension = "skl"; break;
                 case (int)Ext.bgc: string_extension = "bgc"; break;
                 case (int)Ext.bmse: string_extension = "bmse"; break;
@@ -405,6 +411,12 @@ namespace DDDAarclist
                 case (int)Ext.wfp: string_extension = "wfp"; break;
                 case (int)Ext.jex: string_extension = "jex"; break;
                 case (int)Ext.smx: string_extension = "smx"; break;
+                case (int)Ext.fsm: string_extension = "fsm"; break;
+                case (int)Ext.sce: string_extension = "sce"; break;
+                case (int)Ext.spkg: string_extension = "spkg"; break;
+                case (int)Ext.shl: string_extension = "shl"; break;
+                case (int)Ext.gr2: string_extension = "gr2"; break;
+                case (int)Ext.sase: string_extension = "sase"; break;
 
                 default:
                     string_extension = "" + ext.ToString("X4"); break;
@@ -587,7 +599,7 @@ namespace DDDAarclist
                 case "rnp": int_extension = (int)Ext.rnp; break;
                 case "rpi": int_extension = (int)Ext.rpi; break;
                 case "rpn": int_extension = (int)Ext.rpn; break;
-                case "shl": int_extension = (int)Ext.shl; break;
+                case "shp": int_extension = (int)Ext.shp; break;
                 case "skl": int_extension = (int)Ext.skl; break;
                 case "bgc": int_extension = (int)Ext.bgc; break;
                 case "bmse": int_extension = (int)Ext.bmse; break;
@@ -606,6 +618,12 @@ namespace DDDAarclist
                 case "wfp": int_extension = (int)Ext.wfp; break;
                 case "jex": int_extension = (int)Ext.jex; break;
                 case "smx": int_extension = (int)Ext.smx; break;
+                case "fsm": int_extension = (int)Ext.fsm; break;
+                case "sce": int_extension = (int)Ext.sce; break;
+                case "spkg": int_extension = (int)Ext.spkg; break;
+                case "shl": int_extension = (int)Ext.shl; break;
+                case "gr2": int_extension = (int)Ext.gr2; break;
+                case "sase": int_extension = (int)Ext.sase; break;
 
                 default:
                     int_extension = Convert.ToInt32(ext, 16); break;
