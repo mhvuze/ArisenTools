@@ -19,7 +19,7 @@ namespace DDDAarclist
             {
                 Console.WriteLine("ERROR: Invalid amount of arguments.\n");
                 Console.WriteLine("Use DDDAarclist <input_folder> [flag]");
-                Console.WriteLine("Available flag: -f for full path name");
+                Console.WriteLine("Available flag: -full for full path name");
                 return;
             }
 

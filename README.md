@@ -36,6 +36,16 @@ Unpacking syntax:
 DDDApck input.pck
 ```
 
+##DDDAtexlist
+Processes all .tex archive files from a given folder recursively. Gathered info is printed in comma-seperated format, no files are converted.
+
+Useful for finding duplicates or files of interest. You can force full path printing for archive names by using the flag `-full`.
+
+Syntax:
+```
+DDDAtexlist input_folder [flag]
+```
+
 ##Requirements
 * Microsoft .NET Framework 4.5
 * [Zlib.net (supplied)](http://www.componentace.com/zlib_.NET.htm) (for building only)
