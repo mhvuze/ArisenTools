@@ -27,17 +27,17 @@ DDDAarclist input_folder [flag]
 ```
 
 ##DDDApck
-Unpacks .pck package files. Repacking is not planned. Only tested on message.pck.
+Unpacks and repacks .pck package files. Repacked files not tested in-game but should be functional.
 
 It is currently unknown how to pull the right file names and extensions, hence the hex name and generic extension.
 
-Unpacking syntax:
+Syntax:
 ```
-DDDApck input.pck
+DDDApck input.pck|input_folder
 ```
 
 ##DDDAtexlist
-Processes all .tex archive files from a given folder recursively. Gathered info is printed in comma-seperated format, no files are converted.
+Processes all .tex texture files from a given folder recursively. Gathered info is printed in comma-seperated format, no files are converted.
 
 Useful for finding duplicates or files of interest. You can force full path printing for archive names by using the flag `-full`.
 
