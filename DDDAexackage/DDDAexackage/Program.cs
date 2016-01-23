@@ -53,8 +53,6 @@ namespace DDDAexackage
 
                 // Extract file
                 Console.WriteLine("Processing " + string_name);
-                //Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFileNameWithoutExtension(input) + "\\" + string_name));
-                string test = Path.GetPathRoot(input);
                 using (Stream extract = File.Create(Path.GetDirectoryName(input) + "\\" + string_name))
                 {
                     extract.Write(file_data, 0, size);
