@@ -26,6 +26,14 @@ Syntax:
 DDDAarclist input_folder [flag]
 ```
 
+##DDDAexackage
+Unpacks exackage.bin files from the PS3(!) version. This tool was used to easily create a Japanese dub for the PC version since it doesn't contain Japanese language due to licencing issues presumably.
+
+Unpacking syntax:
+```
+DDDAexackage exackage.bin
+```
+
 ##DDDApck
 Unpacks and repacks .pck package files. Repacked files not tested in-game but should be functional.
 
