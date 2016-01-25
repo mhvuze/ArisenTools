@@ -38,7 +38,7 @@ namespace DDDAarclist
 
             // Setup csv writer
             StreamWriter csv = new StreamWriter("ArcInfo.csv", false);
-            csv.WriteLine("Archive,File,Type,CSize,FSize,Constant,Offset");
+            csv.WriteLine("Archive,File,Type,Entry,CSize,FSize,Constant,Offset");
             string file_info;
 
             // Recursively work through archives
@@ -89,6 +89,7 @@ namespace DDDAarclist
                         path + "," +
                         string_name + "." + ExtensionHandler.string_extension + "," +
                         ExtensionHandler.string_extension + "," +
+                        (i + 1) + "," +
                         comp_size + "," +
                         full_size + "," +
                         constant + "," +
